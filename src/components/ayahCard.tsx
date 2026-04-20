@@ -50,7 +50,7 @@ export default function AyahCard() {
             {/* dynamic section of showing ayah list */}
             <div className="w-full flex flex-col gap-5">
                 {surah.verses.map((ayah, index) => (
-                    <div className="rounded-xl p-5 border-[0.5px] border-[#0d654947]">
+                    <div className="rounded-xl p-5 border-[0.5px] bg-white border-[#0d654947]">
                         <div className="flex items-center justify-between mb-4">
                             <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#E6EFEC] text-[#0D6549] text-sm font-medium">
                                 {ayah.id}
