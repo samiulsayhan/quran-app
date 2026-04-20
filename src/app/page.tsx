@@ -2,9 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-[#FDFCF8] font-sans dark:bg-black">
-      <header></header>
-      <main>
+    <div className="flex flex-col flex-1 max-w-[1540px] lg:w-[80%] md:w-[80%] sm:w-[80%] px-5 bg-[#FDFCF8] font-sans dark:bg-black">
+      <header>
+        <div>
+          <h1 className="text-3xl text-[#0D6549]">AL Quran</h1>
+        </div>
+        <div></div>
+      </header>
+      <main className="">
         <section className="text-center mb-10">
           <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E4ECE6] text-primary mb-4">
             <svg
@@ -40,8 +45,91 @@ export default function Home() {
             />
           </div>
         </section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <a
+            href="/surah/1"
+            className="group flex items-center gap-4 rounded-xl bg-white border-[0.5px]  border-[#E4ECE6] p-4 hover:border-[#0d65498b] hover:shadow-sm transition"
+          >
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#E4ECE6] text-primary font-semibold rotate-45">
+              <span className="-rotate-45 text-sm">1</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <p className="font-semibold truncate group-hover:text-[#0D6549] transition">
+                  Al-Faatiha
+                </p>
+                <p className="font-amiri text-xl text-primary">
+                  سُورَةُ ٱلْفَاتِحَةِ
+                </p>
+              </div>
+              <p className="text-xs text-muted-foreground truncate">
+                The Opening · 7 ayahs · Meccan
+              </p>
+            </div>
+          </a>
+          <a
+            href="/surah/1"
+            className="group flex items-center gap-4 rounded-xl bg-white border-[0.5px]  border-[#E4ECE6] p-4 hover:border-[#0d65498b] hover:shadow-sm transition"
+          >
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#E4ECE6] text-primary font-semibold rotate-45">
+              <span className="-rotate-45 text-sm">1</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <p className="font-semibold truncate group-hover:text-[#0D6549] transition">
+                  Al-Faatiha
+                </p>
+                <p className="font-amiri text-xl text-primary" dir="rtl">
+                  سُورَةُ ٱلْفَاتِحَةِ
+                </p>
+              </div>
+              <p className="text-xs text-muted-foreground truncate">
+                The Opening · 7 ayahs · Meccan
+              </p>
+            </div>
+          </a>
+          <a
+            href="/surah/1"
+            className="group flex items-center gap-4 rounded-xl bg-white border-[0.5px]  border-[#E4ECE6] p-4 hover:border-[#0d65498b] hover:shadow-sm transition"
+          >
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#E4ECE6] text-primary font-semibold rotate-45">
+              <span className="-rotate-45 text-sm">1</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <p className="font-semibold truncate group-hover:text-[#0D6549] transition">
+                  Al-Faatiha
+                </p>
+                <p className="font-amiri text-xl text-primary" dir="rtl">
+                  سُورَةُ ٱلْفَاتِحَةِ
+                </p>
+              </div>
+              <p className="text-xs text-muted-foreground truncate">
+                The Opening · 7 ayahs · Meccan
+              </p>
+            </div>
+          </a>
+          <a
+            href="/surah/1"
+            className="group flex items-center gap-4 rounded-xl bg-white border-[0.5px]  border-[#E4ECE6] p-4 hover:border-[#0d65498b] hover:shadow-sm transition"
+          >
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#E4ECE6] text-primary font-semibold rotate-45">
+              <span className="-rotate-45 text-sm">1</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center justify-between gap-2">
+                <p className="font-semibold truncate group-hover:text-[#0D6549] transition">
+                  Al-Faatiha
+                </p>
+                <p className="font-amiri text-xl text-primary" dir="rtl">
+                  سُورَةُ ٱلْفَاتِحَةِ
+                </p>
+              </div>
+              <p className="text-xs text-muted-foreground truncate">
+                The Opening · 7 ayahs · Meccan
+              </p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
