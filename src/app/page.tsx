@@ -3,9 +3,9 @@ import qurans from "@/data/quran.json";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center gap-10 w-full bg-[#FDFCF8] font-sans dark:bg-black">
-      <header className="flex justify-center w-full py-5 px-5 border-[0.5px] border-gray-200">
-        <div className="flex flex-row max-w-[1540px] lg:w-[80%] md:w-[80%] sm:w-[80%] justify-between items-center">
+    <div className="flex flex-col items-center gap-10 w-full bg-[#FDFCF8] font-sans dark:bg-black ">
+      <header className="flex justify-center w-full py-5 px-5 border-[0.5px] border-gray-200  bg-[#FDFCF8] z-50">
+        <div className="flex flex-row max-w-[1540px] lg:w-[80%] md:w-[80%] sm:w-[80%] justify-between items-center ">
           <div className="flex items-center gap-2 justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="max-w-[1540px] lg:w-[80%] md:w-[80%] sm:w-[80%] px-5 ">
-        <section className="text-center mb-10">
+      <main className="max-w-[1540px] lg:w-[80%] md:w-[80%] sm:w-[80%] px-5 pb-10 z-10">
+        <section className="text-center mb-10 mt-20">
           <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E4ECE6] text-primary mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,22 +86,22 @@ export default function Home() {
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {qurans.map((quran, index) => (
             <a
-              href="/surah/1"
+              href={`./surah/${quran.id}`}
               className="group flex items-center gap-4 rounded-2xl bg-white border-[0.5px]  border-[#E4ECE6] p-4 hover:border-[#0d65498b] hover:shadow-sm transition"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#E6EFEC] text-primary font-semibold rotate-45">
-                <span className="-rotate-45 text-sm">{quran.id}</span>
+              <div className="flex h-10 w-10 z-0 shrink-0 items-center justify-center rounded-xl bg-[#E6EFEC] text-primary font-semibold rotate-45">
+                <span className=" -rotate-45 z-0 text-sm">{quran.id}</span>
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-2">
                   <p className="font-semibold truncate group-hover:text-[#0D6549] transition">
                     {quran.transliteration}
                   </p>
-                  <p className="font-amiri text-xl text-primary">
+                  <p className="font-amiri text-xl text-[#0D6549]">
                     {quran.name}
                   </p>
                 </div>
-                <p className="text-xs text-muted-foreground truncate">
+                <p className="text-xs text-gray-500 text-muted-foreground truncate">
                   {quran.translation} · {quran.total_verses} ayahs ·{" "}
                   {quran.type}
                 </p>
