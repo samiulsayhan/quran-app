@@ -1,5 +1,12 @@
 
-export default function DynamicRoute() {
+import AyahCard from "@/components/ayahCard"
+import quran from "@/data/quran.json"
 
-  return <div>My post:</div>;
+export default function DynamicRoutes() {
+
+  return (
+    <div className="w-full flex items-center justify-center py-10">
+      <AyahCard></AyahCard>
+    </div>
+  )
 }
